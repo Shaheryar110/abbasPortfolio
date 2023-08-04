@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("/Background.webp"), linear-gradient(#828282, #828282);
+  color: #11131a;
+  background-position: 50% 0, 0 0;
+  background-repeat: repeat-y, repeat;
+  background-size: 100%, auto;
+  background-attachment: fixed, scroll;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  font-family: "Nohemi";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 160%;
+  display: flex;
+  animation: backmove 5s infinite;
+}
+.filter {
+  z-index: -1;
+  opacity: 0.1;
+  background-image: url("/filter.gif");
+  background-position: 0 0;
+  background-size: auto;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.card {
+  cursor: url('/right-top-icon.png') ,pointer;
+  /* cursor: url('http://anuary.com/dev/hp/pad3/public/images/hand-cursor.png'), pointer; */
+  overflow: hidden;
+  box-shadow: 0 -30px 40px rgba(0, 0, 0, .25);
+}
+ /* @media  {
+  
+ } */
+ .work-card-image-wrapper {
+  
+  cursor: url('/right-top-icon.png') ,pointer;
+ }
+
+ ::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  background: transparent;
+}
+
+/* Track */
+body::-webkit-scrollbar-track  {
+  background: transparent !important;
+  }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #9eff00;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* .css-znf-6xq {
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 40px 0 64px;
+    border-top: 1px solid #828282;
+} */

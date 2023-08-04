@@ -1,0 +1,157 @@
+.button {
+    transition: background-color 3s ease-in-out, transform 3s ease-in-out;
+    padding: 0;
+  }
+  
+  .bottom {
+    background-color: rgba(255, 255, 255,0);
+    transform: translate3d(-8px, 20px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(13deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 2px;
+    transition: .3s ease-out;
+  }
+  
+  
+  .button:hover ~ .bottom {
+    background-color: rgba(255, 255, 255);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+  .bottomNav {
+    background-color: rgba(255, 255, 255,0);
+    transform: translate3d(-8px, 20px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(13deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 2px;
+    transition: .3s ease-out;
+  }
+  
+  
+  .button:hover ~ .bottomNav {
+    background-color: #9eff00;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .logo {
+    cursor: pointer;
+    transition: 5s ease-in-out;
+  }
+  
+  .logo:hover {
+    content: url("/Logo-green.svg");
+  }
+  .Navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .navItems {
+    font-size: 1.25rem;
+    line-height: 130%;
+  }
+  .burgerButton {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .burgerTop, .burgerMid, .burgerBottom {
+    width: 38px;
+    height: 2px;
+    background-color: white;
+  }
+  .burgerX {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .burgerX > .burgerXTop {
+    width: 38px;
+    height: 2px;
+    background-color: white;
+    transform-origin: top right;
+    animation: rotateleft .3s forwards;
+  }
+  @keyframes rotateleft {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: translate3d(0px, -5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+    }
+  }
+  .burgerX > .burgerXBottom {
+    width: 38px;
+    height: 2px;
+    background-color: white;
+    transform-origin: top right;
+    animation: rotateright .3s forwards;
+  }
+  @keyframes rotateright {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: translate3d(0px, 2px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+    }
+  }
+  .navbarModal {
+    animation: modalAnimation .3s forwards ease-in-out;
+    width: 100vw;
+  }
+  @keyframes modalAnimation {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bottomScroll {
+    background-color: rgb(0, 0, 0);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    padding: 0 !important;
+    width: 100%;
+    height: 2px;
+    transition: .3s ease-out;
+  }
+  
+  
+  .buttonScroll:hover ~ .bottomScroll {
+    background-color: rgba(255, 255, 255,0);
+    transform: translate3d(-8px, 20px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(13deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
